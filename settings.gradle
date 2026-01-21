@@ -23,6 +23,6 @@ plugins {
 // This should match the folder name of the project, or else IDEA may complain (see https://youtrack.jetbrains.com/issue/IDEA-317606)
 
 include("common")
-include("fabric")
+// include("fabric")  // Fabric support disabled
 include("forge")
 rootProject.name = "create-trading-floor"
