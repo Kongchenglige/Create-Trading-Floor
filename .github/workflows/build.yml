@@ -26,13 +26,6 @@ jobs:
       - name: make gradle wrapper executable
         run: chmod +x gradlew
 
-      - name: disable fabric for CI
-        run: |
-          # Disable Fabric platform to avoid broken dependencies
-          sed -i 's/^enabled_platforms = fabric,forge$/enabled_platforms = forge/' gradle.properties
-          # Verify the change
-          cat gradle.properties | grep enabled_platforms
-
       - name: build forge
         run: ./gradlew forge:build --no-daemon
 
