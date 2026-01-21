@@ -498,7 +498,7 @@ public class TradingDepotBehaviour extends BlockEntityBehaviour implements Commo
      * 查找并缓存合适的村民
      */
     @Nullable
-    private Villager findAndCacheVillager(ServerLevel level, BlockPos workstationPos, int currentTick) {
+    private Villager findAndCacheVillager(ServerLevel level, BlockPos workstationPos, long currentTick) {
         BlockPos depotPos = blockEntity.getBlockPos();
 
         //检测周围8格内的村民
