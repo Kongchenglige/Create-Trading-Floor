@@ -37,7 +37,7 @@ dependencies {
     modImplementation("net.fabricmc:fabric-loader:${fabric_loader_version}")
     compileOnly group: 'org.spongepowered', name: 'mixin', version: '0.8.5'
 //    modImplementation("net.minecraftforge:forge:${minecraft_version}-${forge_version}")
-    // Compile against Create ~~Fabric~~ forge in common
+    // Compile against Create Forge in common
     // beware of differences across platforms!
     // dependencies must also be pulled in to minimize problems, from remapping issues to compile errors.
     // All dependencies except Flywheel and Registrate are NOT safe to use!
@@ -45,8 +45,7 @@ dependencies {
 //    modCompileOnly("com.simibubi.create:create-fabric-${minecraft_version}:${create_fabric_version}") { transitive = false }
     modCompileOnly("com.simibubi.create:create-${minecraft_version}:${create_forge_version}") { transitive = false }
     modCompileOnly("com.tterrag.registrate:Registrate:${registrate_forge_version}")
-    modApi "dev.engine-room.flywheel:flywheel-fabric-api-${minecraft_version}:${flywheel_version}"
-    modImplementation "dev.engine-room.flywheel:flywheel-fabric-${minecraft_version}:${flywheel_version}"
+    // Flywheel Forge is included transitively by Create, no need to declare here
     modCompileOnly("net.createmod.catnip:Catnip-Forge-${minecraft_version}:${catnip_forge_version}") { transitive = false }
     modCompileOnly("net.createmod.ponder:Ponder-Forge-${minecraft_version}:${ponder_forge_version}") { transitive = false }
 

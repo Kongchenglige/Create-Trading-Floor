@@ -8,7 +8,17 @@
   "mixins": [
     "AdvancementAccessMixin",
     "ChuteBlockEntityMixin",
-    "CreateCreativeModeTabMixin"
+    "CreateCreativeModeTabMixin",
+    "item_listings.DyedArmorForEmeraldsAccessMixin",
+    "item_listings.EmeraldForItemsAccessMixin",
+    "item_listings.EmeraldsForVillagerTypeItemAccessMixin",
+    "item_listings.EnchantBookForEmeraldsAccessMixin",
+    "item_listings.EnchantedItemForEmeraldsAccessMixin",
+    "item_listings.ItemsAndEmeraldsToItemsAccessMixin",
+    "item_listings.ItemsForEmeraldsAccessMixin",
+    "item_listings.SussyStewForEmeraldsAccessMixin",
+    "item_listings.TippedArrowForItemsAndEmeraldsAccessMixin",
+    "item_listings.TreasureMapForEmeraldsAccessMixin"
   ],
   "injectors": {
     "defaultRequire": 1
