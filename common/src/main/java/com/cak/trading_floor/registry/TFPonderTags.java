@@ -1,29 +1,27 @@
 package com.cak.trading_floor.registry;
 
+import com.cak.trading_floor.TradingFloor;
 import com.simibubi.create.AllBlocks;
-import com.tterrag.registrate.util.entry.RegistryEntry;
-import net.createmod.catnip.platform.CatnipServices;
-import net.createmod.ponder.api.registration.PonderTagRegistrationHelper;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.ItemLike;
+import com.simibubi.create.foundation.ponder.PonderRegistry;
+import com.simibubi.create.foundation.ponder.PonderTag;
 
 public class TFPonderTags {
 
-    public static final ResourceLocation ALL_TRADING_FLOOR_PONDERS = new ResourceLocation("base");
+    public static final PonderTag
+        ALL_TRADING_FLOOR_PONDERS = create("base").item(AllBlocks.COGWHEEL.get())
+        .defaultLang("Create: Trading Floor", "Special trading depot to automatically trade with villagers")
+        .addToIndex();
 
-    public static void register(PonderTagRegistrationHelper<ResourceLocation> helper) {
-        PonderTagRegistrationHelper<RegistryEntry<?>> HELPER = helper.withKeyFunction(RegistryEntry::getId);
-        PonderTagRegistrationHelper<ItemLike> itemHelper = helper.withKeyFunction(
-            CatnipServices.REGISTRIES::getKeyOrThrow);
+    private static PonderTag create(String id) {
+        return new PonderTag(TradingFloor.asResource(id));
+    }
 
-        helper.registerTag(ALL_TRADING_FLOOR_PONDERS)
-            .addToIndex()
-            .item(AllBlocks.COGWHEEL.get(), true, false)
-            .title("Create: Trading Floor")
-            .description("Special trading depot to automatically trade with villagers")
-            .register();
+    public static void register() {
+        // Add items to tags here
 
+        PonderRegistry.TAGS.forTag(ALL_TRADING_FLOOR_PONDERS)
+            .add(TFRegistry.TRADING_DEPOT);
 
     }
-    
+
 }

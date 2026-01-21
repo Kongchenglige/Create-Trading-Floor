@@ -37,15 +37,9 @@ public class TradingFloorForge {
     }
     
     private static void addPostInitLang(RegistrateLangProvider registrateLangProvider) {
-//        BIG WARNING: good luck if you wanna update lang lol
-//        TFPonderTags.register();
-//        TFPonderIndex.register(helper);
-//
-//        SharedText.gatherText();
-//        PonderLocalization.generateSceneLang();
-//
-//        PonderLocalization.provideLang(TradingFloor.MOD_ID, registrateLangProvider::add);
-        
+        TFPonderTags.register();
+        TFPonderIndex.register();
+
         TFAdvancements.provideLang(registrateLangProvider::add);
     }
     
