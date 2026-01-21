@@ -93,9 +93,17 @@ allprojects {
 
 publishMods {
     def TOKENS = new HashMap<String, String>();
-    file("$projectDir/.env").readLines().each() {
-        def (key, value) = it.tokenize('=')
-        TOKENS.put(key, value)
+    // Only read .env file if it exists (local development)
+    def envFile = file("$projectDir/.env")
+    if (envFile.exists()) {
+        envFile.readLines().each() {
+            def (key, value) = it.tokenize('=')
+            TOKENS.put(key, value)
+        }
+    } else {
+        // Use GitHub Secrets in CI environment
+        TOKENS.put("CURSEFORGE_PUBLISH_TOKEN", System.getenv("CURSEFORGE_PUBLISH_TOKEN"))
+        TOKENS.put("MODRINTH_PUBLISH_TOKEN", System.getenv("MODRINTH_PUBLISH_TOKEN"))
     }
 
     def cfg = new Yaml().load(new File("$projectDir/changelog.yaml").newInputStream())
