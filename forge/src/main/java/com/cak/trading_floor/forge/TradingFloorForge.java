@@ -23,6 +23,7 @@ public class TradingFloorForge {
         TFRegistry.REGISTRATE.addDataGenerator(ProviderType.LANG, TradingFloorForge::addPostInitLang);
         
         TradingFloor.init();
+        TFArmInteractionPointTypes.register();
         TFPackets.register();
         
         eventBus.addListener(TradingFloorData::gatherData);
