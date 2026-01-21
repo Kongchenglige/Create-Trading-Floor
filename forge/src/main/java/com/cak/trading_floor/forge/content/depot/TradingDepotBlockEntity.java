@@ -89,8 +89,11 @@ public class TradingDepotBlockEntity extends CommonTradingDepotBlockEntity {
      * Advancement only
      */
     int emeraldsProduced = 0;
-    
-    @Override
+
+    /**
+     * Goggle tooltip information - Create will find this method via reflection
+     * even without implementing IHaveGoggleInformation interface.
+     */
     public boolean addToGoggleTooltip(List<Component> tooltip, boolean isPlayerSneaking) {
         BlockPos attachedWorkstationPosition = getBlockPos().relative(
             getBlockState().getValue(TradingDepotBlock.FACING).getOpposite()
