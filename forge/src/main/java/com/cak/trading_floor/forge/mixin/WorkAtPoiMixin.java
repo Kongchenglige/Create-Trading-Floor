@@ -1,4 +1,4 @@
-package com.cak.trading_floor.mixin;
+package com.cak.trading_floor.forge.mixin;
 
 import com.cak.trading_floor.content.trading_depot.CommonTradingDepotBlockEntity;
 import com.cak.trading_floor.content.trading_depot.behavior.CommonTradingDepotBehaviorAccess;

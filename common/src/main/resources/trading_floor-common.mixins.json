@@ -6,7 +6,6 @@
   "client": [
   ],
   "mixins": [
-    "WorkAtPoiMixin"
   ],
   "injectors": {
     "defaultRequire": 1
