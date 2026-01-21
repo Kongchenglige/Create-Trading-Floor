@@ -9,7 +9,25 @@ pluginManagement {
 }
 
 include("common")
-include("fabric")
-include("forge")
+
+// Read enabled platforms from gradle.properties
+def enabledPlatforms = System.getProperty("enabled_platforms", "")
+if (enabledPlatforms.isEmpty()) {
+    // Fallback to reading from properties file
+    def propsFile = new File(settingsDir, "gradle.properties")
+    if (propsFile.exists()) {
+        def props = new Properties()
+        propsFile.withInputStream { props.load(it) }
+        enabledPlatforms = props.getProperty("enabled_platforms", "")
+    }
+}
+
+// Only include platforms that are enabled
+if (enabledPlatforms.contains("fabric")) {
+    include("fabric")
+}
+if (enabledPlatforms.contains("forge")) {
+    include("forge")
+}
 
 rootProject.name = "create-trading-floor"
