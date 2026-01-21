@@ -39,7 +39,31 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+/**
+ * Platform-specific BlockEntity implementation that optionally implements
+ * IHaveGoggleInformation if the Create API supports it.
+ */
 public class TradingDepotBlockEntity extends CommonTradingDepotBlockEntity {
+
+    // Try to load IHaveGoggleInformation interface for Create 6.0.0+
+    private static final boolean HAS_GOGGLES_INTERFACE;
+    static {
+        boolean hasInterface = false;
+        try {
+            Class.forName("com.simibubi.create.api.equipment.goggles.IHaveGoggleInformation");
+            hasInterface = true;
+        } catch (ClassNotFoundException e) {
+            // Create 0.5.1x doesn't have this interface in this package
+            // Try the old package path
+            try {
+                Class.forName("com.simibubi.create.content.equipment.goggle.IHaveGoggleInformation");
+                hasInterface = true;
+            } catch (ClassNotFoundException e2) {
+                // Neither version available, goggles won't work
+            }
+        }
+        HAS_GOGGLES_INTERFACE = hasInterface;
+    }
     
     TradingDepotBehaviour tradingDepotBehaviour;
     FilteringBehaviour filtering;
