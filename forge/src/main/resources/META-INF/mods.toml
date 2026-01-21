@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[${forge_version},)"
+loaderVersion = "[47,)"
 issueTrackerURL = "https://github.com/cakeGit/Create-Trading-Floor/issues"
 license = "MIT"
 
