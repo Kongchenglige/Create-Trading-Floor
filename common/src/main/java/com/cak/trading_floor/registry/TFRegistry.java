@@ -17,8 +17,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.List;
 
-// Removed: import static com.simibubi.create.api.behaviour.display.DisplaySource.displaySource;
-// DisplaySource not available in Create 0.5.1j
+import static com.simibubi.create.content.redstone.displayLink.source.DisplaySource.displaySource;
 
 public class TFRegistry {
 
@@ -35,11 +34,8 @@ public class TFRegistry {
         .block("trading_depot", TFPlatformRegistry.getTradingDepotBlock())
         .properties(BlockBehaviour.Properties::noOcclusion)
         .blockstate(BlockStateGen.horizontalBlockProvider(false))
-        // Note: DisplayLink support removed for Create 0.5.1j compatibility
-        // These transforms require com.simibubi.create.api.behaviour.display.DisplaySource
-        // which doesn't exist in Create 0.5.1x
-        // .transform(displaySource(TFDisplaySources.TRADE_COMPLETED_COUNT))
-        // .transform(displaySource(TFDisplaySources.TRADE_PRODUCT_SUM))
+        .transform(displaySource(TFDisplaySources.TRADE_COMPLETED_COUNT))
+        .transform(displaySource(TFDisplaySources.TRADE_PRODUCT_SUM))
         .simpleItem()
         .register();
 
