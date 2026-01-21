@@ -74,9 +74,9 @@ public class TradingDepotBehaviour extends BlockEntityBehaviour implements Commo
     public static class CachedVillagerInfo {
         final UUID villagerUuid;
         final BlockPos workstationPos;
-        final int cacheTick;
+        final long cacheTick;
 
-        public CachedVillagerInfo(UUID villagerUuid, BlockPos workstationPos, int cacheTick) {
+        public CachedVillagerInfo(UUID villagerUuid, BlockPos workstationPos, long cacheTick) {
             this.villagerUuid = villagerUuid;
             this.workstationPos = workstationPos;
             this.cacheTick = cacheTick;
@@ -418,7 +418,7 @@ public class TradingDepotBehaviour extends BlockEntityBehaviour implements Commo
             return;
         }
 
-        int currentTick = level.getGameTime();
+        long currentTick = level.getGameTime();
 
         //优先使用缓存的村民
         Villager targetVillager = null;
