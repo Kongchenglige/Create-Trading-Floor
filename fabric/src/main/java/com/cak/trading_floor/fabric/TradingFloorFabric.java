@@ -2,21 +2,26 @@ package com.cak.trading_floor.fabric;
 
 import com.cak.trading_floor.TradingFloor;
 import com.cak.trading_floor.fabric.network.TFPackets;
+import com.cak.trading_floor.registry.TFPlatformRegistry;
 import com.cak.trading_floor.registry.TFRegistry;
+import com.cak.trading_floor.registry.fabric.TFPlatformRegistryImpl;
 import com.simibubi.create.AllPackets;
 import net.fabricmc.api.ModInitializer;
 
 public class TradingFloorFabric implements ModInitializer {
-    
+
     @Override
     public void onInitialize() {
+        // CRITICAL: Initialize platform registry BEFORE any TFRegistry access
+        TFPlatformRegistry.PLATFORM = TFPlatformRegistryImpl.INSTANCE;
+
         TradingFloor.init();
         TFRegistry.REGISTRATE.register();
         TFPackets.registerPackets();
         TFPackets.getChannel().initServerListener();
         TradingFloor.LOGGER.info("Finished Initialisation For Mod: " + TradingFloor.MOD_ID);
     }
-    
+
 }
 //
 //public TradingFloorForge() {
