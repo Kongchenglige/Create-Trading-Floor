@@ -1,0 +1,386 @@
+> Task :common:compileJava FAILED
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/TradingFloor.java:3: error: cannot find symbol
+import com.cak.trading_floor.foundation.ponder_scenes.TFPonderPlugin;
+                                                     ^
+  symbol:   class TFPonderPlugin
+  location: package com.cak.trading_floor.foundation.ponder_scenes
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:6: error: cannot find symbol
+import com.simibubi.create.foundation.ponder.ElementLink;
+                                            ^
+  symbol:   class ElementLink
+  location: package com.simibubi.create.foundation.ponder
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:7: error: cannot find symbol
+import com.simibubi.create.foundation.ponder.PonderPalette;
+                                            ^
+  symbol:   class PonderPalette
+  location: package com.simibubi.create.foundation.ponder
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:8: error: cannot find symbol
+import com.simibubi.create.foundation.ponder.SceneBuilder;
+                                            ^
+  symbol:   class SceneBuilder
+  location: package com.simibubi.create.foundation.ponder
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:9: error: cannot find symbol
+import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
+                                            ^
+  symbol:   class SceneBuildingUtil
+  location: package com.simibubi.create.foundation.ponder
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:10: error: cannot find symbol
+import com.simibubi.create.foundation.ponder.element.EntityElement;
+                                                    ^
+  symbol:   class EntityElement
+  location: package com.simibubi.create.foundation.ponder.element
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:22: error: cannot find symbol
+    public static void trading(SceneBuilder scene, SceneBuildingUtil util) {
+                               ^
+  symbol:   class SceneBuilder
+  location: class TradingDepotScenes
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:22: error: cannot find symbol
+    public static void trading(SceneBuilder scene, SceneBuildingUtil util) {
+                                                   ^
+  symbol:   class SceneBuildingUtil
+  location: class TradingDepotScenes
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:111: error: cannot find symbol
+    public static void trading_double(SceneBuilder scene, SceneBuildingUtil util) {
+                                      ^
+  symbol:   class SceneBuilder
+  location: class TradingDepotScenes
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:111: error: cannot find symbol
+    public static void trading_double(SceneBuilder scene, SceneBuildingUtil util) {
+                                                          ^
+  symbol:   class SceneBuildingUtil
+  location: class TradingDepotScenes
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFRegistry.java:20: error: cannot find symbol
+import static com.simibubi.create.content.redstone.displayLink.source.DisplaySource.displaySource;
+                                                                     ^
+  symbol:   class DisplaySource
+  location: package com.simibubi.create.content.redstone.displayLink.source
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFRegistry.java:20: error: static import only from classes and interfaces
+import static com.simibubi.create.content.redstone.displayLink.source.DisplaySource.displaySource;
+^
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFDisplaySources.java:5: error: cannot find symbol
+import com.simibubi.create.content.redstone.displayLink.source.DisplaySource;
+                                                              ^
+  symbol:   class DisplaySource
+  location: package com.simibubi.create.content.redstone.displayLink.source
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/content/trading_depot/displays/CurrentTradeCompletedCountDisplay.java:6: error: cannot find symbol
+import com.simibubi.create.content.redstone.displayLink.source.DisplaySource;
+                                                              ^
+  symbol:   class DisplaySource
+  location: package com.simibubi.create.content.redstone.displayLink.source
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/content/trading_depot/displays/CurrentTradeCompletedCountDisplay.java:12: error: cannot find symbol
+public class CurrentTradeCompletedCountDisplay extends DisplaySource {
+                                                       ^
+  symbol: class DisplaySource
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/content/trading_depot/displays/TradeProductSumDisplay.java:6: error: cannot find symbol
+import com.simibubi.create.content.redstone.displayLink.source.DisplaySource;
+                                                              ^
+  symbol:   class DisplaySource
+  location: package com.simibubi.create.content.redstone.displayLink.source
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/content/trading_depot/displays/TradeProductSumDisplay.java:13: error: cannot find symbol
+public class TradeProductSumDisplay extends DisplaySource {
+                                            ^
+  symbol: class DisplaySource
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFDisplaySources.java:15: error: cannot find symbol
+    private static <T extends DisplaySource> RegistryEntry<T> simple(String name, Supplier<T> supplier) {
+                              ^
+  symbol:   class DisplaySource
+  location: class TFDisplaySources
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderTags.java:5: error: cannot find symbol
+import com.simibubi.create.foundation.ponder.PonderRegistry;
+                                            ^
+  symbol:   class PonderRegistry
+  location: package com.simibubi.create.foundation.ponder
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderTags.java:6: error: cannot find symbol
+import com.simibubi.create.foundation.ponder.PonderTag;
+                                            ^
+  symbol:   class PonderTag
+  location: package com.simibubi.create.foundation.ponder
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderTags.java:10: error: cannot find symbol
+    public static final PonderTag
+                        ^
+  symbol:   class PonderTag
+  location: class TFPonderTags
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderTags.java:15: error: cannot find symbol
+    private static PonderTag create(String id) {
+                   ^
+  symbol:   class PonderTag
+  location: class TFPonderTags
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderIndex.java:5: error: cannot find symbol
+import com.simibubi.create.foundation.ponder.PonderRegistrationHelper;
+                                            ^
+  symbol:   class PonderRegistrationHelper
+  location: package com.simibubi.create.foundation.ponder
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderIndex.java:12: error: cannot find symbol
+    static final PonderRegistrationHelper HELPER = new PonderRegistrationHelper(TradingFloor.MOD_ID);
+                 ^
+  symbol:   class PonderRegistrationHelper
+  location: class TFPonderIndex
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/TradingFloor.java:31: error: cannot find symbol
+        PonderIndex.addPlugin(new TFPonderPlugin());
+                                  ^
+  symbol:   class TFPonderPlugin
+  location: class TradingFloor
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/compat/jei/virtual_recipes/potential_villager_trade/PotentialVillagerTradeCategory.java:39: warning: [removal] getBackground() in IRecipeCategory has been deprecated and marked for removal
+    public IDrawable getBackground() {
+                     ^
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:46: error: cannot find symbol
+        scene.overlay.showOutline(PonderPalette.GREEN, "Depot Highlight", util.select.position(1, 1, 1), 30);
+                                  ^
+  symbol:   variable PonderPalette
+  location: class TradingDepotScenes
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:50: error: cannot find symbol
+        scene.overlay.showOutline(PonderPalette.WHITE, "Workstation Highlight", util.select.position(1, 1, 2), 28);
+                                  ^
+  symbol:   variable PonderPalette
+  location: class TradingDepotScenes
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:64: error: cannot find symbol
+        ElementLink<EntityElement> villager = scene.world.createEntity(level -> {
+        ^
+  symbol:   class ElementLink
+  location: class TradingDepotScenes
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:64: error: cannot find symbol
+        ElementLink<EntityElement> villager = scene.world.createEntity(level -> {
+                    ^
+  symbol:   class EntityElement
+  location: class TradingDepotScenes
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:170: error: cannot find symbol
+        ElementLink<EntityElement> villager = scene.world.createEntity(level -> {
+        ^
+  symbol:   class ElementLink
+  location: class TradingDepotScenes
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:170: error: cannot find symbol
+        ElementLink<EntityElement> villager = scene.world.createEntity(level -> {
+                    ^
+  symbol:   class EntityElement
+  location: class TradingDepotScenes
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFRegistry.java:37: error: cannot find symbol
+        .transform(displaySource(TFDisplaySources.TRADE_COMPLETED_COUNT))
+                   ^
+  symbol:   method displaySource(RegistryEntry<CurrentTradeCompletedCountDisplay>)
+  location: class TFRegistry
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFRegistry.java:38: error: cannot find symbol
+        .transform(displaySource(TFDisplaySources.TRADE_PRODUCT_SUM))
+                   ^
+  symbol:   method displaySource(RegistryEntry<TradeProductSumDisplay>)
+  location: class TFRegistry
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/content/trading_depot/displays/CurrentTradeCompletedCountDisplay.java:14: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/content/trading_depot/displays/TradeProductSumDisplay.java:15: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderTags.java:16: error: cannot find symbol
+        return new PonderTag(TradingFloor.asResource(id));
+                   ^
+  symbol:   class PonderTag
+  location: class TFPonderTags
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderTags.java:22: error: package PonderRegistry does not exist
+        PonderRegistry.TAGS.forTag(ALL_TRADING_FLOOR_PONDERS)
+                      ^
+/home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderIndex.java:12: error: cannot find symbol
+    static final PonderRegistrationHelper HELPER = new PonderRegistrationHelper(TradingFloor.MOD_ID);
+                                                       ^
+  symbol:   class PonderRegistrationHelper
+  location: class TFPonderIndex
+38 errors
+1 warning
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1769032556637.json
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':common:compileJava'.
+> Compilation failed; see the compiler output below.
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/content/trading_depot/displays/CurrentTradeCompletedCountDisplay.java:14: error: method does not override or implement a method from a supertype
+      @Override
+      ^
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/content/trading_depot/displays/TradeProductSumDisplay.java:15: error: method does not override or implement a method from a supertype
+      @Override
+      ^
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/content/trading_depot/displays/CurrentTradeCompletedCountDisplay.java:12: error: cannot find symbol
+  public class CurrentTradeCompletedCountDisplay extends DisplaySource {
+                                                         ^
+    symbol: class DisplaySource
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/content/trading_depot/displays/TradeProductSumDisplay.java:13: error: cannot find symbol
+  public class TradeProductSumDisplay extends DisplaySource {
+                                              ^
+    symbol: class DisplaySource
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/compat/jei/virtual_recipes/potential_villager_trade/PotentialVillagerTradeCategory.java:39: warning: [removal] getBackground() in IRecipeCategory has been deprecated and marked for removal
+      public IDrawable getBackground() {
+                       ^
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderTags.java:22: error: package PonderRegistry does not exist
+          PonderRegistry.TAGS.forTag(ALL_TRADING_FLOOR_PONDERS)
+                        ^
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFRegistry.java:37: error: cannot find symbol
+          .transform(displaySource(TFDisplaySources.TRADE_COMPLETED_COUNT))
+                     ^
+    symbol:   method displaySource(RegistryEntry<CurrentTradeCompletedCountDisplay>)
+    location: class TFRegistry
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFRegistry.java:38: error: cannot find symbol
+          .transform(displaySource(TFDisplaySources.TRADE_PRODUCT_SUM))
+                     ^
+    symbol:   method displaySource(RegistryEntry<TradeProductSumDisplay>)
+    location: class TFRegistry
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFRegistry.java:20: error: static import only from classes and interfaces
+  import static com.simibubi.create.content.redstone.displayLink.source.DisplaySource.displaySource;
+  ^
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/TradingFloor.java:3: error: cannot find symbol
+  import com.cak.trading_floor.foundation.ponder_scenes.TFPonderPlugin;
+                                                       ^
+    symbol:   class TFPonderPlugin
+    location: package com.cak.trading_floor.foundation.ponder_scenes
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:6: error: cannot find symbol
+  import com.simibubi.create.foundation.ponder.ElementLink;
+                                              ^
+    symbol:   class ElementLink
+    location: package com.simibubi.create.foundation.ponder
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:7: error: cannot find symbol
+  import com.simibubi.create.foundation.ponder.PonderPalette;
+                                              ^
+    symbol:   class PonderPalette
+    location: package com.simibubi.create.foundation.ponder
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:8: error: cannot find symbol
+  import com.simibubi.create.foundation.ponder.SceneBuilder;
+[Incubating] Problems report is available at: file:///home/runner/work/Create-Trading-Floor/Create-Trading-Floor/build/reports/problems/problems-report.html
+                                              ^
+    symbol:   class SceneBuilder
+    location: package com.simibubi.create.foundation.ponder
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:9: error: cannot find symbol
+  import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
+                                              ^
+    symbol:   class SceneBuildingUtil
+    location: package com.simibubi.create.foundation.ponder
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:10: error: cannot find symbol
+  import com.simibubi.create.foundation.ponder.element.EntityElement;
+                                                      ^
+    symbol:   class EntityElement
+    location: package com.simibubi.create.foundation.ponder.element
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:22: error: cannot find symbol
+      public static void trading(SceneBuilder scene, SceneBuildingUtil util) {
+                                 ^
+    symbol:   class SceneBuilder
+    location: class TradingDepotScenes
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:22: error: cannot find symbol
+      public static void trading(SceneBuilder scene, SceneBuildingUtil util) {
+                                                     ^
+    symbol:   class SceneBuildingUtil
+    location: class TradingDepotScenes
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:111: error: cannot find symbol
+      public static void trading_double(SceneBuilder scene, SceneBuildingUtil util) {
+                                        ^
+    symbol:   class SceneBuilder
+    location: class TradingDepotScenes
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:111: error: cannot find symbol
+      public static void trading_double(SceneBuilder scene, SceneBuildingUtil util) {
+                                                            ^
+    symbol:   class SceneBuildingUtil
+    location: class TradingDepotScenes
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFRegistry.java:20: error: cannot find symbol
+  import static com.simibubi.create.content.redstone.displayLink.source.DisplaySource.displaySource;
+                                                                       ^
+    symbol:   class DisplaySource
+    location: package com.simibubi.create.content.redstone.displayLink.source
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFDisplaySources.java:5: error: cannot find symbol
+  import com.simibubi.create.content.redstone.displayLink.source.DisplaySource;
+                                                                ^
+    symbol:   class DisplaySource
+    location: package com.simibubi.create.content.redstone.displayLink.source
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/content/trading_depot/displays/CurrentTradeCompletedCountDisplay.java:6: error: cannot find symbol
+  import com.simibubi.create.content.redstone.displayLink.source.DisplaySource;
+                                                                ^
+    symbol:   class DisplaySource
+    location: package com.simibubi.create.content.redstone.displayLink.source
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/content/trading_depot/displays/TradeProductSumDisplay.java:6: error: cannot find symbol
+  import com.simibubi.create.content.redstone.displayLink.source.DisplaySource;
+                                                                ^
+    symbol:   class DisplaySource
+    location: package com.simibubi.create.content.redstone.displayLink.source
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFDisplaySources.java:15: error: cannot find symbol
+      private static <T extends DisplaySource> RegistryEntry<T> simple(String name, Supplier<T> supplier) {
+                                ^
+    symbol:   class DisplaySource
+    location: class TFDisplaySources
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderTags.java:5: error: cannot find symbol
+  import com.simibubi.create.foundation.ponder.PonderRegistry;
+                                              ^
+    symbol:   class PonderRegistry
+    location: package com.simibubi.create.foundation.ponder
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderTags.java:6: error: cannot find symbol
+  import com.simibubi.create.foundation.ponder.PonderTag;
+                                              ^
+    symbol:   class PonderTag
+    location: package com.simibubi.create.foundation.ponder
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderTags.java:10: error: cannot find symbol
+      public static final PonderTag
+                          ^
+    symbol:   class PonderTag
+    location: class TFPonderTags
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderTags.java:15: error: cannot find symbol
+      private static PonderTag create(String id) {
+                     ^
+    symbol:   class PonderTag
+    location: class TFPonderTags
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderIndex.java:5: error: cannot find symbol
+  import com.simibubi.create.foundation.ponder.PonderRegistrationHelper;
+                                              ^
+    symbol:   class PonderRegistrationHelper
+    location: package com.simibubi.create.foundation.ponder
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderIndex.java:12: error: cannot find symbol
+      static final PonderRegistrationHelper HELPER = new PonderRegistrationHelper(TradingFloor.MOD_ID);
+                   ^
+    symbol:   class PonderRegistrationHelper
+    location: class TFPonderIndex
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/TradingFloor.java:31: error: cannot find symbol
+          PonderIndex.addPlugin(new TFPonderPlugin());
+                                    ^
+    symbol:   class TFPonderPlugin
+    location: class TradingFloor
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:46: error: cannot find symbol
+          scene.overlay.showOutline(PonderPalette.GREEN, "Depot Highlight", util.select.position(1, 1, 1), 30);
+                                    ^
+    symbol:   variable PonderPalette
+    location: class TradingDepotScenes
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:50: error: cannot find symbol
+          scene.overlay.showOutline(PonderPalette.WHITE, "Workstation Highlight", util.select.position(1, 1, 2), 28);
+                                    ^
+    symbol:   variable PonderPalette
+    location: class TradingDepotScenes
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:64: error: cannot find symbol
+          ElementLink<EntityElement> villager = scene.world.createEntity(level -> {
+          ^
+    symbol:   class ElementLink
+    location: class TradingDepotScenes
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:64: error: cannot find symbol
+          ElementLink<EntityElement> villager = scene.world.createEntity(level -> {
+                      ^
+    symbol:   class EntityElement
+    location: class TradingDepotScenes
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:170: error: cannot find symbol
+          ElementLink<EntityElement> villager = scene.world.createEntity(level -> {
+          ^
+    symbol:   class ElementLink
+    location: class TradingDepotScenes
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/foundation/ponder_scenes/TradingDepotScenes.java:170: error: cannot find symbol
+          ElementLink<EntityElement> villager = scene.world.createEntity(level -> {
+                      ^
+    symbol:   class EntityElement
+    location: class TradingDepotScenes
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderTags.java:16: error: cannot find symbol
+          return new PonderTag(TradingFloor.asResource(id));
+                     ^
+    symbol:   class PonderTag
+    location: class TFPonderTags
+  /home/runner/work/Create-Trading-Floor/Create-Trading-Floor/common/src/main/java/com/cak/trading_floor/registry/TFPonderIndex.java:12: error: cannot find symbol
+      static final PonderRegistrationHelper HELPER = new PonderRegistrationHelper(TradingFloor.MOD_ID);
+                                                         ^
+    symbol:   class PonderRegistrationHelper
+    location: class TFPonderIndex
+  38 errors
+  1 warning
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 19s
+9 actionable tasks: 9 executed
